@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Model name="Chesar" id="Chesar" language="delphi">
+  <DesignElement name="ResultString" id="ID=154" metaclass="Object">
+    <Property name="Active">False</Property>
+    <Property name="Concurrent">False</Property>
+    <Property name="MultipleInstance">False</Property>
+  </DesignElement>
+  <DesignElement name="ChesarCrypt" id="ID=146" metaclass="Object">
+    <Property name="Active">False</Property>
+    <Property name="Concurrent">False</Property>
+    <Property name="MultipleInstance">False</Property>
+    <Link targetName="Dependency Link1" id="ID=162" metaclass="Dependency Link" idref="ID=154">
+      <Property name="Supplier">ResultString</Property>
+      <Property name="Client">ChesarCrypt</Property>
+    </Link>
+  </DesignElement>
+  <DesignElement name="Кнопка Зашифровать!" id="ID=138" metaclass="Object">
+    <Property name="Active">False</Property>
+    <Property name="Concurrent">False</Property>
+    <Property name="MultipleInstance">False</Property>
+    <Link targetName="Dependency Link1" id="ID=156" metaclass="Dependency Link" idref="ID=146">
+      <Property name="Supplier">ChesarCrypt</Property>
+      <Property name="Client">Кнопка Зашифровать!</Property>
+    </Link>
+  </DesignElement>
+  <DesignElement name="ChesarDecrypt" id="ID=148" metaclass="Object">
+    <Property name="Active">False</Property>
+    <Property name="Concurrent">False</Property>
+    <Property name="MultipleInstance">False</Property>
+    <Link targetName="Dependency Link1" id="ID=170" metaclass="Dependency Link" idref="ID=154">
+      <Property name="Supplier">ResultString</Property>
+      <Property name="Client">ChesarDecrypt</Property>
+    </Link>
+  </DesignElement>
+  <DesignElement name="Кнопка расшифровать!" id="ID=140" metaclass="Object">
+    <Property name="Active">False</Property>
+    <Property name="Concurrent">False</Property>
+    <Property name="MultipleInstance">False</Property>
+    <Link targetName="Dependency Link1" id="ID=164" metaclass="Dependency Link" idref="ID=148">
+      <Property name="Supplier">ChesarDecrypt</Property>
+      <Property name="Client">Кнопка расшифровать!</Property>
+    </Link>
+  </DesignElement>
+  <DesignElement name="Form1" id="ID=136" metaclass="Object">
+    <Property name="Active">False</Property>
+    <Property name="Concurrent">False</Property>
+    <Property name="MultipleInstance">False</Property>
+    <Link targetName="Dependency Link1" id="ID=142" metaclass="Dependency Link" idref="ID=138">
+      <Property name="Supplier">Кнопка Зашифровать!</Property>
+      <Property name="Client">Form1</Property>
+    </Link>
+    <Link targetName="Dependency Link2" id="ID=144" metaclass="Dependency Link" idref="ID=140">
+      <Property name="Supplier">Кнопка расшифровать!</Property>
+      <Property name="Client">Form1</Property>
+    </Link>
+  </DesignElement>
+  <DesignElement name="InputString" id="ID=150" metaclass="Object">
+    <Property name="Active">False</Property>
+    <Property name="Concurrent">False</Property>
+    <Property name="MultipleInstance">False</Property>
+    <Link targetName="Dependency Link1" id="ID=158" metaclass="Dependency Link" idref="ID=146">
+      <Property name="Supplier">ChesarCrypt</Property>
+      <Property name="Client">InputString</Property>
+    </Link>
+    <Link targetName="Dependency Link2" id="ID=166" metaclass="Dependency Link" idref="ID=148">
+      <Property name="Supplier">ChesarDecrypt</Property>
+      <Property name="Client">InputString</Property>
+    </Link>
+  </DesignElement>
+  <DesignElement name="InputOffset" id="ID=152" metaclass="Object">
+    <Property name="Active">False</Property>
+    <Property name="Concurrent">False</Property>
+    <Property name="MultipleInstance">False</Property>
+    <Link targetName="Dependency Link1" id="ID=160" metaclass="Dependency Link" idref="ID=146">
+      <Property name="Supplier">ChesarCrypt</Property>
+      <Property name="Client">InputOffset</Property>
+    </Link>
+    <Link targetName="Dependency Link2" id="ID=168" metaclass="Dependency Link" idref="ID=148">
+      <Property name="Supplier">ChesarDecrypt</Property>
+      <Property name="Client">InputOffset</Property>
+    </Link>
+  </DesignElement>
+  <Diagram name="default" id="ID=6" metaclass="Namespace Diagram" file="default.txvpck.html">
+    <Property name="defaultDiagram">true</Property>
+    <DiagramReference id="ID=127" element="ID=3" metaclass="Namespace">
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">120,100,220,234</Property>
+      <DiagramReference id="ID=130" element="ID=7" metaclass="Module" />
+    </DiagramReference>
+    <DiagramReference id="ID=128" element="ID=4" metaclass="Namespace">
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">360,80,460,231</Property>
+      <DiagramReference id="ID=131" element="ID=10" metaclass="Class">
+        <Property name="Abstract">False</Property>
+        <Property name="Extends">Vcl.Forms.TForm</Property>
+        <Property name="Persistent">False</Property>
+        <Property name="Sealed">False</Property>
+      </DiagramReference>
+      <DiagramReference id="ID=132" element="ID=11" metaclass="Module" />
+    </DiagramReference>
+    <DiagramReference id="ID=129" element="ID=5" metaclass="Namespace">
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">240,100,340,234</Property>
+      <DiagramReference id="ID=133" element="ID=14" metaclass="Module" />
+    </DiagramReference>
+    <DiagramReference id="ID=137" element="ID=136" metaclass="Object">
+      <Property name="Active">False</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Concurrent">False</Property>
+      <Property name="MultipleInstance">False</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">120,400,171,426</Property>
+      <DiagramReference id="ID=143" element="ID=142" metaclass="Dependency Link">
+        <Property name="Supplier">Кнопка Зашифровать!</Property>
+        <Property name="Client">Form1</Property>
+      </DiagramReference>
+      <DiagramReference id="ID=145" element="ID=144" metaclass="Dependency Link">
+        <Property name="Supplier">Кнопка расшифровать!</Property>
+        <Property name="Client">Form1</Property>
+      </DiagramReference>
+    </DiagramReference>
+    <DiagramReference id="ID=139" element="ID=138" metaclass="Object">
+      <Property name="Active">False</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Concurrent">False</Property>
+      <Property name="MultipleInstance">False</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">260,420,409,446</Property>
+      <DiagramReference id="ID=157" element="ID=156" metaclass="Dependency Link">
+        <Property name="Supplier">ChesarCrypt</Property>
+        <Property name="Client">Кнопка Зашифровать!</Property>
+      </DiagramReference>
+    </DiagramReference>
+    <DiagramReference id="ID=141" element="ID=140" metaclass="Object">
+      <Property name="Active">False</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Concurrent">False</Property>
+      <Property name="MultipleInstance">False</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">260,500,414,526</Property>
+      <DiagramReference id="ID=165" element="ID=164" metaclass="Dependency Link">
+        <Property name="Supplier">ChesarDecrypt</Property>
+        <Property name="Client">Кнопка расшифровать!</Property>
+      </DiagramReference>
+    </DiagramReference>
+    <DiagramReference id="ID=147" element="ID=146" metaclass="Object">
+      <Property name="Active">False</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Concurrent">False</Property>
+      <Property name="MultipleInstance">False</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">600,360,687,386</Property>
+      <DiagramReference id="ID=163" element="ID=162" metaclass="Dependency Link">
+        <Property name="Supplier">ResultString</Property>
+        <Property name="Client">ChesarCrypt</Property>
+      </DiagramReference>
+    </DiagramReference>
+    <DiagramReference id="ID=149" element="ID=148" metaclass="Object">
+      <Property name="Active">False</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Concurrent">False</Property>
+      <Property name="MultipleInstance">False</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">560,460,660,486</Property>
+      <DiagramReference id="ID=171" element="ID=170" metaclass="Dependency Link">
+        <Property name="Supplier">ResultString</Property>
+        <Property name="Client">ChesarDecrypt</Property>
+      </DiagramReference>
+    </DiagramReference>
+    <DiagramReference id="ID=151" element="ID=150" metaclass="Object">
+      <Property name="Active">False</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Concurrent">False</Property>
+      <Property name="MultipleInstance">False</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">220,300,297,326</Property>
+      <DiagramReference id="ID=159" element="ID=158" metaclass="Dependency Link">
+        <Property name="Supplier">ChesarCrypt</Property>
+        <Property name="Client">InputString</Property>
+      </DiagramReference>
+      <DiagramReference id="ID=167" element="ID=166" metaclass="Dependency Link">
+        <Property name="Supplier">ChesarDecrypt</Property>
+        <Property name="Client">InputString</Property>
+      </DiagramReference>
+    </DiagramReference>
+    <DiagramReference id="ID=153" element="ID=152" metaclass="Object">
+      <Property name="Active">False</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Concurrent">False</Property>
+      <Property name="MultipleInstance">False</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">340,300,418,326</Property>
+      <DiagramReference id="ID=161" element="ID=160" metaclass="Dependency Link">
+        <Property name="Supplier">ChesarCrypt</Property>
+        <Property name="Client">InputOffset</Property>
+      </DiagramReference>
+      <DiagramReference id="ID=169" element="ID=168" metaclass="Dependency Link">
+        <Property name="Supplier">ChesarDecrypt</Property>
+        <Property name="Client">InputOffset</Property>
+      </DiagramReference>
+    </DiagramReference>
+    <DiagramReference id="ID=155" element="ID=154" metaclass="Object">
+      <Property name="Active">False</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Concurrent">False</Property>
+      <Property name="MultipleInstance">False</Property>
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="bounds">520,280,605,306</Property>
+    </DiagramReference>
+  </Diagram>
+  <Package name="Chesar" id="ID=3">
+    <Diagram name="Chesar" id="ID=8" metaclass="Namespace Diagram" file="default.txvpck.html">
+      <Property name="defaultDiagram">true</Property>
+      <DiagramReference id="ID=172" element="ID=7" metaclass="Module">
+        <Property name="Gradient Mode">Vertical</Property>
+        <Property name="Gradient ON">False</Property>
+        <Property name="Gradient color 2">255, 255, 255</Property>
+        <Property name="Gradient color 1">255, 255, 255</Property>
+        <Property name="Color Area">Whole Shape</Property>
+      </DiagramReference>
+    </Diagram>
+    <Classifier name="globals Chesar" id="ID=7" type="Module" visibility="public">
+      <Uses />
+    </Classifier>
+  </Package>
+  <Package name="main" id="ID=4">
+    <Diagram name="main" id="ID=12" metaclass="Namespace Diagram" file="default.txvpck.html">
+      <Property name="defaultDiagram">true</Property>
+      <DiagramReference id="ID=173" element="ID=10" metaclass="Class">
+        <Property name="Abstract">False</Property>
+        <Property name="Gradient Mode">Vertical</Property>
+        <Property name="Extends">Vcl.Forms.TForm</Property>
+        <Property name="Color Area">Whole Shape</Property>
+        <Property name="Persistent">False</Property>
+        <Property name="Sealed">False</Property>
+        <Property name="Gradient ON">False</Property>
+        <Property name="Gradient color 2">255, 255, 255</Property>
+        <Property name="Gradient color 1">255, 255, 255</Property>
+      </DiagramReference>
+      <DiagramReference id="ID=174" element="ID=11" metaclass="Module">
+        <Property name="Gradient Mode">Vertical</Property>
+        <Property name="Gradient ON">False</Property>
+        <Property name="Gradient color 2">255, 255, 255</Property>
+        <Property name="Gradient color 1">255, 255, 255</Property>
+        <Property name="Color Area">Whole Shape</Property>
+        <DiagramReference id="ID=175" element="ID=52" metaclass="Association Link">
+          <Property name="Client">Form1</Property>
+          <Property name="Directed">False</Property>
+          <Property name="Supplier">TForm1</Property>
+          <Property name="Type">association</Property>
+        </DiagramReference>
+      </DiagramReference>
+    </Diagram>
+    <Classifier name="TForm1" id="ID=10" type="Class" visibility="public">
+      <Property name="Abstract">False</Property>
+      <Property name="Extends">Vcl.Forms.TForm</Property>
+      <Property name="Persistent">False</Property>
+      <Property name="Sealed">False</Property>
+      <Extends idref="ID=34" refFN="Vcl.Forms.TForm" doom="true" />
+      <Uses>
+        <Use element="ID=51" type="field_type" />
+      </Uses>
+      <Field fieldType="Field" elementName="InputString" id="ID=20" type="TEdit" systemType="TEdit" isPrimitive="false" visibility="public">
+        <Property name="Type">TEdit</Property>
+        <Property name="Class">False</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="LabelInput" id="ID=21" type="TLabel" systemType="TLabel" isPrimitive="false" visibility="public">
+        <Property name="Type">TLabel</Property>
+        <Property name="Class">False</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="ResultString" id="ID=22" type="TEdit" systemType="TEdit" isPrimitive="false" visibility="public">
+        <Property name="Type">TEdit</Property>
+        <Property name="Class">False</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="LabelOutput" id="ID=23" type="TLabel" systemType="TLabel" isPrimitive="false" visibility="public">
+        <Property name="Type">TLabel</Property>
+        <Property name="Class">False</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="ButtonCrypt" id="ID=24" type="TButton" systemType="TButton" isPrimitive="false" visibility="public">
+        <Property name="Type">TButton</Property>
+        <Property name="Class">False</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="ButtonDecrypt" id="ID=25" type="TButton" systemType="TButton" isPrimitive="false" visibility="public">
+        <Property name="Type">TButton</Property>
+        <Property name="Class">False</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="InputOffset" id="ID=26" type="TEdit" systemType="TEdit" isPrimitive="false" visibility="public">
+        <Property name="Type">TEdit</Property>
+        <Property name="Class">False</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="LabelOffset" id="ID=27" type="TLabel" systemType="TLabel" isPrimitive="false" visibility="public">
+        <Property name="Type">TLabel</Property>
+        <Property name="Class">False</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="UpDownOffset" id="ID=28" type="TUpDown" systemType="TUpDown" isPrimitive="false" visibility="public">
+        <Property name="Type">TUpDown</Property>
+        <Property name="Class">False</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Method id="ID=29" name="ButtonCryptClick" isSubroutine="true" visibility="public">
+        <Parameter elementName="Sender" id="ID3=29_40465585" type="TObject" systemType="TObject" isPrimitive="false" />
+        <Property name="Abstract">False</Property>
+        <Property name="Class">False</Property>
+        <Property name="Virtual">False</Property>
+        <Property name="Override">False</Property>
+        <Property name="Final">False</Property>
+        <Property name="summary">Обработчик события для кнопки Зашифровать&lt;br /&gt;</Property>
+        <Property name="Reintroduce">False</Property>
+        <ReturnType id="ID=29" type="" isPrimitive="true" />
+      </Method>
+      <Method id="ID=30" name="ButtonDecryptClick" isSubroutine="true" visibility="public">
+        <Parameter elementName="Sender" id="ID3=30_28645947" type="TObject" systemType="TObject" isPrimitive="false" />
+        <Property name="Abstract">False</Property>
+        <Property name="Class">False</Property>
+        <Property name="Virtual">False</Property>
+        <Property name="Override">False</Property>
+        <Property name="Final">False</Property>
+        <Property name="summary">Обработчик события для кнопки Расшифровать&lt;br /&gt;</Property>
+        <Property name="Reintroduce">False</Property>
+        <ReturnType id="ID=30" type="" isPrimitive="true" />
+      </Method>
+    </Classifier>
+    <Classifier name="globals main" id="ID=11" type="Module" visibility="public">
+      <Link targetName="Form1" id="ID=52" metaclass="Association Link" idref="ID=10">
+        <Property name="Client">Form1</Property>
+        <Property name="Directed">False</Property>
+        <Property name="Supplier">TForm1</Property>
+        <Property name="Type">association</Property>
+      </Link>
+      <Uses />
+      <Field fieldType="Field" elementName="Form1" id="ID=51" typeref="ID=10" type="TForm1" isPrimitive="false" visibility="internal">
+        <Property name="Type">TForm1</Property>
+        <Property name="Const">False</Property>
+      </Field>
+    </Classifier>
+  </Package>
+  <Package name="Cryptor" id="ID=5">
+    <Diagram name="Cryptor" id="ID=15" metaclass="Namespace Diagram" file="default.txvpck.html">
+      <Property name="defaultDiagram">true</Property>
+      <DiagramReference id="ID=188" element="ID=14" metaclass="Module">
+        <Property name="Gradient Mode">Vertical</Property>
+        <Property name="Gradient ON">False</Property>
+        <Property name="Gradient color 2">255, 255, 255</Property>
+        <Property name="Gradient color 1">255, 255, 255</Property>
+        <Property name="Color Area">Whole Shape</Property>
+      </DiagramReference>
+    </Diagram>
+    <Classifier name="globals Cryptor" id="ID=14" type="Module" visibility="public">
+      <Uses />
+      <Method id="ID=54" name="ChesarCrypt" visibility="public">
+        <Parameter elementName="input" id="ID3=54_5857365" type="string" isPrimitive="true" />
+        <Parameter elementName="offset" id="ID3=54_52716286" type="longint" systemType="Longint" isPrimitive="false" />
+        <Property name="Returns">string</Property>
+        <ReturnType id="ID=54" type="string" isPrimitive="true" />
+      </Method>
+      <Method id="ID=55" name="ChesarDecrypt" visibility="public">
+        <Parameter elementName="input" id="ID3=55_4684529" type="string" isPrimitive="true" />
+        <Parameter elementName="offset" id="ID3=55_42160768" type="longint" systemType="Longint" isPrimitive="false" />
+        <Property name="Returns">string</Property>
+        <ReturnType id="ID=55" type="string" isPrimitive="true" />
+      </Method>
+    </Classifier>
+  </Package>
+</Model>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <node uin="vagzehccp7cc5uuei_n">
+    <property name="$metaclass" value="Object" />
+    <property name="$name" value="Form1" />
+    <link uin="g1hfnwl74ilbqy3cg_l">
+      <property name="$metaclass" value="Dependency Link" />
+      <property name="$name" value="Dependency Link1" />
+      <participant referencedUin="design:node:::vagzehccp7cc5uuei_n" role="Client" />
+      <participant referencedUin="design:node:::hsx8go0yxchz0mchi_n" role="Supplier" />
+    </link>
+    <link uin="ngmhdr4sd8mrdq5si_l">
+      <property name="$metaclass" value="Dependency Link" />
+      <property name="$name" value="Dependency Link2" />
+      <participant referencedUin="design:node:::vagzehccp7cc5uuei_n" role="Client" />
+      <participant referencedUin="design:node:::krdgdzdseqj7ru0wp_n" role="Supplier" />
+    </link>
+  </node>
+  <node uin="hsx8go0yxchz0mchi_n">
+    <property name="$metaclass" value="Object" />
+    <property name="$name" value="Кнопка Зашифровать!" />
+    <link uin="rii5r3ytpsh_l">
+      <property name="$metaclass" value="Dependency Link" />
+      <property name="$name" value="Dependency Link1" />
+      <participant referencedUin="design:node:::hsx8go0yxchz0mchi_n" role="Client" />
+      <participant referencedUin="design:node:::56vkkfbu3o7q0bck_n" role="Supplier" />
+    </link>
+  </node>
+  <node uin="krdgdzdseqj7ru0wp_n">
+    <property name="$metaclass" value="Object" />
+    <property name="$name" value="Кнопка расшифровать!" />
+    <link uin="eocxtlgrhyf_l">
+      <property name="$metaclass" value="Dependency Link" />
+      <property name="$name" value="Dependency Link1" />
+      <participant referencedUin="design:node:::krdgdzdseqj7ru0wp_n" role="Client" />
+      <participant referencedUin="design:node:::lnp0774qj2qypnrhr_n" role="Supplier" />
+    </link>
+  </node>
+  <node uin="56vkkfbu3o7q0bck_n">
+    <property name="$metaclass" value="Object" />
+    <property name="$name" value="ChesarCrypt" />
+    <link uin="lu5xkudarhf_l">
+      <property name="$metaclass" value="Dependency Link" />
+      <property name="$name" value="Dependency Link1" />
+      <participant referencedUin="design:node:::56vkkfbu3o7q0bck_n" role="Client" />
+      <participant referencedUin="design:node:::001eib1900h_n" role="Supplier" />
+    </link>
+  </node>
+  <node uin="lnp0774qj2qypnrhr_n">
+    <property name="$metaclass" value="Object" />
+    <property name="$name" value="ChesarDecrypt" />
+    <link uin="sslxq93slbp_l">
+      <property name="$metaclass" value="Dependency Link" />
+      <property name="$name" value="Dependency Link1" />
+      <participant referencedUin="design:node:::lnp0774qj2qypnrhr_n" role="Client" />
+      <participant referencedUin="design:node:::001eib1900h_n" role="Supplier" />
+    </link>
+  </node>
+  <node uin="n7r1y8lcyzl_n">
+    <property name="$metaclass" value="Object" />
+    <property name="$name" value="InputString" />
+    <link uin="uf1fpggxcni_l">
+      <property name="$metaclass" value="Dependency Link" />
+      <property name="$name" value="Dependency Link1" />
+      <participant referencedUin="design:node:::n7r1y8lcyzl_n" role="Client" />
+      <participant referencedUin="design:node:::56vkkfbu3o7q0bck_n" role="Supplier" />
+    </link>
+    <link uin="w5tm7rki0ij_l">
+      <property name="$metaclass" value="Dependency Link" />
+      <property name="$name" value="Dependency Link2" />
+      <participant referencedUin="design:node:::n7r1y8lcyzl_n" role="Client" />
+      <participant referencedUin="design:node:::lnp0774qj2qypnrhr_n" role="Supplier" />
+    </link>
+  </node>
+  <node uin="awli0iq30t_n">
+    <property name="$metaclass" value="Object" />
+    <property name="$name" value="InputOffset" />
+    <link uin="jpdcwvxfal_l">
+      <property name="$metaclass" value="Dependency Link" />
+      <property name="$name" value="Dependency Link1" />
+      <participant referencedUin="design:node:::awli0iq30t_n" role="Client" />
+      <participant referencedUin="design:node:::56vkkfbu3o7q0bck_n" role="Supplier" />
+    </link>
+    <link uin="p6dpudoml0t_l">
+      <property name="$metaclass" value="Dependency Link" />
+      <property name="$name" value="Dependency Link2" />
+      <participant referencedUin="design:node:::awli0iq30t_n" role="Client" />
+      <participant referencedUin="design:node:::lnp0774qj2qypnrhr_n" role="Supplier" />
+    </link>
+  </node>
+  <node uin="001eib1900h_n">
+    <property name="$metaclass" value="Object" />
+    <property name="$name" value="ResultString" />
+  </node>
+</nodeSet>

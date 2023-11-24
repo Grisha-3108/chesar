@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.102,C:\Users\Григорий\Desktop\code\main.pas=C:\Users\Григорий\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.534,=C:\Users\Григорий\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.732,C:\Users\Григорий\Desktop\code\Chesar.dproj=C:\Users\Григорий\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.890,C:\Users\Григорий\Desktop\code\Cryptor.pas=C:\Users\Григорий\Desktop\code\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.102,C:\Users\Григорий\Desktop\code\main.dfm=C:\Users\Григорий\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.040,=C:\Users\Григорий\Desktop\code\Unit1.pas</Transaction>
+    <Transaction>2022.12.28 18:53:42.202,=C:\Users\Григорий\Desktop\code\ModelSupport_Chesar\default.txaPackage</Transaction>
+    <Transaction>2022.12.28 18:53:44.346,=C:\Users\Григорий\Desktop\code\ModelSupport_Chesar\default.txvpck</Transaction>
+    <Transaction>2022.12.28 18:53:55.840,=C:\Users\Григорий\Desktop\code\ModelSupport_Chesar\Chesar\default.txvpck</Transaction>
+    <Transaction>2022.12.28 18:53:55.902,=C:\Users\Григорий\Desktop\code\ModelSupport_Chesar\main\default.txvpck</Transaction>
+    <Transaction>2022.12.28 18:53:55.924,=C:\Users\Григорий\Desktop\code\ModelSupport_Chesar\Cryptor\default.txvpck</Transaction>
+    <Transaction>2022.12.28 18:53:56.389,=C:\Users\Григорий\Desktop\code\ModelSupport_Chesar\main\default.txaPackage</Transaction>
+    <Transaction>2022.12.28 18:53:56.408,=C:\Users\Григорий\Desktop\code\ModelSupport_Chesar\Cryptor\default.txaPackage</Transaction>
+    <Transaction>2022.12.28 18:53:56.456,=C:\Users\Григорий\Desktop\code\ModelSupport_Chesar\Chesar\default.txaPackage</Transaction>
+  </Transactions>
+</BorlandProject>
